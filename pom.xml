@@ -12,16 +12,7 @@
         <module>slimeworldmanager-nms-v1_8_R3</module>
         <module>slimeworldmanager-plugin</module>
         <module>slimeworldmanager-importer</module>
-        <module>slimeworldmanager-nms-v1_9_R1</module>
-        <module>slimeworldmanager-nms-v1_9_R2</module>
-        <module>slimeworldmanager-nms-v1_10_R1</module>
-        <module>slimeworldmanager-nms-v1_11_R1</module>
-        <module>slimeworldmanager-nms-v1_12_R1</module>
-        <module>slimeworldmanager-nms-v1_13_R1</module>
-        <module>slimeworldmanager-nms-v1_13_R2</module>
-        <module>slimeworldmanager-nms-v1_14_R1</module>
         <module>slimeworldmanager-classmodifier</module>
-        <module>slimeworldmanager-nms-v1_15_R1</module>
     </modules>
 
     <repositories>
@@ -46,7 +37,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.8</version>
+            <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -59,6 +50,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     
     <scm>
@@ -70,6 +62,15 @@
     
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>

@@ -29,7 +29,8 @@
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot</artifactId>
             <version>1.8.8-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
+            <systemPath>D:/slimeworldmanager/spigot.jar</systemPath>
+            <scope>system</scope>
         </dependency>
         <dependency>
             <groupId>com.grinderwolf</groupId>

@@ -1,0 +1,25 @@
+[--rev, 1.8.8]
+Loading BuildTools version: git-BuildTools-572310f-197 (#197)
+Java Version: Java 17
+Current Path: D:\slimeworldmanager\spigot-build
+*** Using downloaded git PortableGit-2.45.2-64-bit\PortableGit ***
+*** Please note that this is a beta feature, so if it does not work please also try a manual install of git from https://git-for-windows.github.io/ ***
+git version 2.45.2.windows.1
+java version "17.0.12" 2024-07-16 LTS
+Java(TM) SE Runtime Environment (build 17.0.12+8-LTS-286)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.12+8-LTS-286, mixed mode, sharing)
+Attempting to build version: '1.8.8' use --rev <version> to override
+Found version
+{
+	"name": "582b",
+	"description": "Jenkins build 582b (hotfix 3)",
+	"refs": {
+		"BuildData": "838b40587fa7a68a130b75252959bc8a3481d94f",
+		"Bukkit": "01d1820664a5f881665b84b28871dadd132deaef",
+		"CraftBukkit": "741a1bdf3db8c4d5237407df2872d9857427bfaf",
+		"Spigot": "3c60ece1480c9b686b06f33daa6ca23c8883e9f2"
+	}
+}
+
+*** The version you have requested to build requires Java versions between [Java 7, Java 8], but you are using Java 17
+*** Please rerun BuildTools using an appropriate Java version. For obvious reasons outdated MC versions do not support Java versions that did not exist at their release.

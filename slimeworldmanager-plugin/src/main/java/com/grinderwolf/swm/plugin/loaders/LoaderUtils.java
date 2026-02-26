@@ -23,10 +23,8 @@ import com.grinderwolf.swm.nms.CraftSlimeWorld;
 import com.grinderwolf.swm.plugin.config.ConfigManager;
 import com.grinderwolf.swm.plugin.config.DatasourcesConfig;
 import com.grinderwolf.swm.plugin.loaders.file.FileLoader;
-import com.grinderwolf.swm.plugin.loaders.mongo.MongoLoader;
-import com.grinderwolf.swm.plugin.loaders.mysql.MysqlLoader;
+import com.grinderwolf.swm.plugin.loaders.postgres.PostgresLoader;
 import com.grinderwolf.swm.plugin.log.Logging;
-import com.mongodb.MongoException;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -52,25 +50,14 @@ public class LoaderUtils {
         DatasourcesConfig.FileConfig fileConfig = config.getFileConfig();
         registerLoader("file", new FileLoader(new File(fileConfig.getPath())));
 
-        // Mysql loader
-        DatasourcesConfig.MysqlConfig mysqlConfig = config.getMysqlConfig();
-        if (mysqlConfig.isEnabled()) {
+        // PostgreSQL loader
+        DatasourcesConfig.PostgresConfig postgresConfig = config.getPostgresConfig();
+
+        if (postgresConfig.isEnabled()) {
             try {
-                registerLoader("mysql", new MysqlLoader(mysqlConfig));
+                registerLoader("postgresql", new PostgresLoader(postgresConfig));
             } catch (SQLException ex) {
-                Logging.error("Failed to establish connection to the MySQL server:");
-                ex.printStackTrace();
-            }
-        }
-
-        // MongoDB loader
-        DatasourcesConfig.MongoDBConfig mongoConfig = config.getMongoDbConfig();
-
-        if (mongoConfig.isEnabled()) {
-            try {
-                registerLoader("mongodb", new MongoLoader(mongoConfig));
-            } catch (MongoException ex) {
-                Logging.error("Failed to establish connection to the MongoDB server:");
+                Logging.error("Failed to establish connection to the PostgreSQL server:");
                 ex.printStackTrace();
             }
         }
