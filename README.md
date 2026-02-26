@@ -39,7 +39,7 @@ postgresql:
 2. Você pode utilizar o PGAdmin para gerenciar suas databases dentro do PostgreSQL.
 (https://www.pgadmin.org/download/)
 
-@ 📦 Build do Projeto
+# 📦 Build do Projeto
 
 mvn clean package
 O .jar será gerado na pasta:
