@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="slimeworldmanager-importer" />
+        <module name="slimeworldmanager-nms-common" />
+        <module name="slimeworldmanager-plugin" />
+        <module name="slimeworldmanager-nms-v1_8_R3" />
+        <module name="slimeworldmanager-api" />
+        <module name="slimeworldmanager-classmodifier" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="slimeworldmanager-nms-v1_10_R1" target="17" />
+      <module name="slimeworldmanager-nms-v1_11_R1" target="17" />
+      <module name="slimeworldmanager-nms-v1_12_R1" target="17" />
+      <module name="slimeworldmanager-nms-v1_13_R1" target="17" />
+      <module name="slimeworldmanager-nms-v1_13_R2" target="17" />
+      <module name="slimeworldmanager-nms-v1_14_R1" target="17" />
+      <module name="slimeworldmanager-nms-v1_15_R1" target="17" />
+      <module name="slimeworldmanager-nms-v1_9_R1" target="17" />
+      <module name="slimeworldmanager-nms-v1_9_R2" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="slimeworldmanager" options="" />
+      <module name="slimeworldmanager-api" options="" />
+      <module name="slimeworldmanager-classmodifier" options="" />
+      <module name="slimeworldmanager-importer" options="" />
+      <module name="slimeworldmanager-nms-common" options="" />
+      <module name="slimeworldmanager-nms-v1_10_R1" options="-parameters" />
+      <module name="slimeworldmanager-nms-v1_11_R1" options="-parameters" />
+      <module name="slimeworldmanager-nms-v1_12_R1" options="-parameters" />
+      <module name="slimeworldmanager-nms-v1_13_R1" options="-parameters" />
+      <module name="slimeworldmanager-nms-v1_13_R2" options="-parameters" />
+      <module name="slimeworldmanager-nms-v1_14_R1" options="-parameters" />
+      <module name="slimeworldmanager-nms-v1_15_R1" options="-parameters" />
+      <module name="slimeworldmanager-nms-v1_8_R3" options="" />
+      <module name="slimeworldmanager-nms-v1_9_R1" options="-parameters" />
+      <module name="slimeworldmanager-nms-v1_9_R2" options="-parameters" />
+      <module name="slimeworldmanager-plugin" options="" />
+    </option>
+  </component>
+</project>

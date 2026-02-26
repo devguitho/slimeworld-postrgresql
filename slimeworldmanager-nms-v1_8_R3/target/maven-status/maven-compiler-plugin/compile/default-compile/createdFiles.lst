@@ -1,0 +1,9 @@
+com\grinderwolf\swm\nms\v1_8_R3\v1_8_R3SlimeNMS.class
+com\grinderwolf\swm\nms\v1_8_R3\Converter.class
+com\grinderwolf\swm\nms\v1_8_R3\CustomWorldData.class
+com\grinderwolf\swm\nms\v1_8_R3\CustomDataManager.class
+com\grinderwolf\swm\nms\v1_8_R3\NMSSlimeChunk.class
+com\grinderwolf\swm\nms\v1_8_R3\Converter$1.class
+com\grinderwolf\swm\nms\v1_8_R3\CraftCLSMBridge.class
+com\grinderwolf\swm\nms\v1_8_R3\CustomWorldServer.class
+com\grinderwolf\swm\nms\v1_8_R3\CustomChunkLoader.class
